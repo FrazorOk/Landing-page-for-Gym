@@ -1,0 +1,250 @@
+.community {
+	padding-top: 40px;
+	margin-bottom: 180px;
+
+	&__wrapper {
+		margin: 0 auto;
+		max-width: 1580px;
+	}
+
+	&__container {
+		display: flex;
+		gap: 80px;
+		padding-left: 80px;
+	}
+
+	&__title {
+		position: relative;
+		flex: 0 1 30%;
+		padding: 43px 32px 0 23px;
+		min-height: 100%;
+		transform: translate(-40%, 0);
+		opacity: 0;
+		transition: all 0.7s ease 0s;
+
+		h2 {
+			p {
+				position: relative;
+			}
+			p::after {
+				content: '';
+				position: absolute;
+				left: -70px;
+				top: 50%;
+				transform: translate(0, -50%);
+				width: 134.3px;
+				height: 120px;
+				background-image: url('../img/CommunityIcon.svg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+	&__title._active-anim {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+
+	&__card {
+		position: relative;
+		height: 100%;
+		max-width: 360px;
+		margin: 0 auto;
+		padding: 2px;
+	}
+
+	&__img {
+		z-index: 1;
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: fill;
+		transition: all 0.4s ease 0s;
+	}
+
+	&__img:hover {
+		transform: scale(1.05);
+	}
+
+	&__text {
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		z-index: 3;
+		padding: 0 20px;
+	}
+
+	&__coment {
+		font-family: 'Open Sans';
+		font-style: italic;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26px;
+		text-align: center;
+		color: #ffffff;
+		margin-bottom: 32px;
+	}
+
+	&__name {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		color: #ffffff;
+
+		span {
+			margin-right: 3px;
+		}
+	}
+
+	.community__slider {
+		transform: translate(25%, 0);
+		opacity: 0;
+		transition: all 0.7s ease 0s;
+	}
+	.community__slider._active-anim {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+
+	.swiper-wrapper {
+		max-height: 480px;
+		height: fit-content;
+	}
+
+	&__btns {
+		visibility: hidden;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 4;
+		display: flex;
+		gap: 32px;
+
+		.swiper-button {
+			width: 40px;
+			height: 40px;
+			background-image: url('../img/arrow-slider.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			cursor: pointer;
+			transition: all 0.3s ease 0s;
+		}
+
+		.swiper-button:hover {
+			opacity: 0.7;
+		}
+		.swiper-button:last-child {
+			transform: rotate(180deg);
+		}
+	}
+	&__title &__btns {
+		visibility: visible;
+	}
+}
+
+@media (max-width: 1200px) {
+	.community {
+		&__container {
+			gap: 40px;
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.community {
+		padding-top: 20px;
+		margin-bottom: 110px;
+
+		&__container {
+			padding-left: 0;
+			display: block;
+			gap: none;
+			position: relative;
+		}
+
+		&__title {
+			min-height: 100%;
+			padding-bottom: 35px;
+			margin-bottom: 40px;
+
+			h2 {
+				width: fit-content;
+				margin: 0 auto;
+
+				p {
+					width: fit-content;
+					position: relative;
+				}
+			}
+		}
+
+		&__btns {
+			position: relative;
+			visibility: visible;
+			margin-top: 80px;
+			justify-content: right;
+			margin-right: 30px;
+		}
+
+		&__title &__btns {
+			visibility: hidden;
+			margin: 0;
+		}
+	}
+}
+
+@media (max-width: 427px) {
+	.community {
+		padding-top: 20px;
+		margin-bottom: 80px;
+
+		&__container {
+			padding-left: 0;
+			display: block;
+			gap: none;
+			position: relative;
+		}
+
+		&__title {
+			min-height: 100%;
+			margin-bottom: 50px;
+			padding: 20px 0;
+
+			h2 {
+				p::after {
+					width: 89.53px;
+					height: 80px;
+					left: -50px;
+				}
+			}
+		}
+
+		&__text {
+			bottom: 20px;
+			padding: 0 12px;
+		}
+
+		&__coment {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		&__name {
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		&__btns {
+			justify-content: center;
+			margin-right: 0;
+			margin-top: 50px;
+		}
+
+		&__title &__btns {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+// const
+@import '_nullstyle.scss';
+@import '_constants.scss';
+@import '_header.scss';
+@import '_about.scss';
+@import '_programs.scss';
+@import '_pricing.scss';
+@import '_community.scss';
+@import '_faq.scss';
+@import '_footer.scss';
+
+body {
+	font-family: $font1;
+	font-style: normal;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: $widthContainer;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.h2_green {
+	color: #4ae290;
+}
+.h2_title {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 50px;
+	color: #131316;
+}
+@media (max-width: 428px) {
+	.h2_title {
+		font-size: 32px;
+		line-height: 40px;
+	}
+}
