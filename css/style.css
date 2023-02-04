@@ -93,10 +93,6 @@ body._lock {
   overflow: hidden;
 }
 
-.wrapper {
-  overflow: hidden;
-}
-
 .header__wrapper {
   background-color: #131316;
   min-height: 790px;
@@ -1922,7 +1918,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: clip;
+  overflow: hidden;
   margin: 0 auto;
 }
 
