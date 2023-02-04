@@ -93,6 +93,10 @@ body._lock {
   overflow: hidden;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 .header__wrapper {
   background-color: #131316;
   min-height: 790px;
