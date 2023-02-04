@@ -1263,6 +1263,7 @@ body._lock {
 .community__wrapper {
   margin: 0 auto;
   max-width: 1580px;
+  overflow: hidden;
 }
 .community__container {
   display: -webkit-box;
