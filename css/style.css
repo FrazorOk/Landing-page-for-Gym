@@ -1363,9 +1363,6 @@ body._lock {
   margin-right: 3px;
 }
 .community .community__slider {
-  -webkit-transform: translate(25%, 0);
-      -ms-transform: translate(25%, 0);
-          transform: translate(25%, 0);
   opacity: 0;
   -webkit-transition: all 0.7s ease 0s;
   -o-transition: all 0.7s ease 0s;
